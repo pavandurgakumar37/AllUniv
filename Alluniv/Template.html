@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllUniv</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    html{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+  background-color: #384047;
+}
+
+.wrapper {
+  border-radius: 5px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: #343436;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+}
+
+ul li a {
+  margin-left: 1.5em;
+}
+
+a.logo {
+  margin-right: auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  font-size: 1.25em;
+}
+
+a::after {
+  content:"";
+  top: 80%;
+  border-bottom: 2px solid #F8E71C;
+  transition: all 0.35s;
+  position: absolute;
+}
+
+a:hover::after {
+  transition: all 0.35s;
+}
+
+a::after {
+  right: 50%;
+  left: 50%;
+}
+
+a:hover::after {
+  right: 0;
+  left: 0;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    height: auto;
+  }
+  
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  a.logo {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-right: 0px;
+  }
+  
+  ul {
+    width: 100%;
+    margin-bottom: 1em;
+    justify-content: space-between;
+  }
+  
+  ul li a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  a.logo {
+    margin: 1.5em;
+  }
+  
+  ul {
+    flex-direction: column;
+  }
+  
+  ul li {
+    margin: 0.3em;
+    text-align: center;
+  }
+  
+  ul li a {
+    margin-left: 0px;
+  }
+}
+body{
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+.search-box{
+  width: 100%;
+  position: relative;
+  display: flex;
+
+}
+.search-input{
+  width: 100%;
+  padding: 10px;
+  border: 4px solid #111d5e;
+  border-radius:10px 0 0 10px ;
+  border-right: none;
+  outline: none;
+  font-size: 20px;
+  color: tomato;
+  background: none;
+}
+.search-button{
+ text-align: center;
+height: 51px;
+width: 40px;
+outline: none;
+cursor: pointer;
+border: 4px solid #111d5e;
+ border-radius: 0 10px 10px 0 ;
+border-left: none;
+background: none;
+font-size: 20px;
+border-left: 4px solid #111d5e;
+
+
+}
+.container{
+  width: 35%;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  transform: translate(360px, -200px);
+}
+.blocks{
+    display: flex;
+}
+.univ{
+    color:aquamarine;
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+p{
+    color: black;
+}
+.burger{
+    color: white;
+    transform: translate(-10px , 40px );
+    height:40px;
+    width:40px;
+}
+.above{
+    transform: translateY(-20px );
+}
+.prem{
+    height: 20px;
+    width: 20px;
+}
+.ims{
+    transform: translate(1200px, -100px);
+    height: 30px;
+    width: 30px;
+}
+.dash, .types{
+    display: flex;
+}
+.your{
+    margin-right: 10px;
+    margin-left: 60px;
+}
+.foot{
+    display: flex;
+    background-color: black;
+    padding:70px 10px 20px 10px;
+}
+.logo, .details, .soc{
+    margin:50px;
+}
+.burger1, .burger2, .burger3, .burger4{
+    transform: translate(-10px , 50px );
+    margin-right: 20px;
+    margin-left: 100px;
+}
+.tata{
+  margin: 70px;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  border-radius: 10px;
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  border-radius: 10px;
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  border-radius: 10px;
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  border-radius: 10px;
+  background: #007bb5;
+  color: white;
+}
+.rod{
+  line-height: 30px;
+  margin-left: 30px;
+}
+.central{
+
+  background-color: #343436;
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  margin: 40px 150px 40px 100px ;
+}
+/*
+div img{
+  height: 200px;
+  width: 200px;
+}*/
+.names{
+  margin-left: 90px;
+}
+.matter{
+  margin-top: 50px;
+}
+.checked {
+  color: orange;
+}
+.intro{
+    display:flex;
+    margin: 50px 10px 50px 10px;
+}
+.introims{
+    height: 270px;
+    width: 370px;
+    margin: 0 50px 0 0 ;
+    border-radius: 8px;
+}
+.introname{
+    margin: 50px;
+}
+.stars{
+    width: 390px;
+}
+.book{
+    border-radius: 10px;
+    transform: translateX(550px);
+}
+.book2{
+    transform: translateX(450px);
+}
+.sod{
+    line-height: 20px;
+    margin: 20px;
+}
+.latest{
+    margin: 20px;
+    width: 1000px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid gray;
+}
+</style>
+
+<body>
+    <div class="wrapper">
+        <nav>
+          <div class="prem"><ion-icon class="burger" name="menu-outline"></ion-icon></div>
+          <a href="#" class="logo">AllUniv</a>
+          <a href="" class="burger1">About</a>
+          <a href="" class="burger2">Explore</a>
+          <a href="" class="burger3">Top List</a>
+          <a href="" class="burger4">FAQ</a>
+          <a href="" class="burger5">Account</a>
+          <ul>
+            <li>
+              <a class="above" href="#">About</a>
+            </li>
+            <li>
+              <a class="above" href="#">Explore</a>
+            </li>
+            <li>
+              <a class="above" href="#">Top List</a>
+            </li>
+            <li>
+              <a class="above" href="#">FAQ</a>
+            </li>
+            <li>
+                <div class="container">
+                    <div class="search-box">
+                       <input type="text" class="search-input" placeholder="Search..">
+                 
+                       <button class="search-button">
+                         <i class="fas fa-search"></i>
+                       </button>
+                    </div>
+                 </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    <br><br><br><br><br>
+    <div class="intro">
+        <img class="introims" src="https://cdn.britannica.com/85/13085-050-C2E88389/Corpus-Christi-College-University-of-Cambridge-England.jpg" alt="">
+        <div>
+            <p class="introname1"><h1>ABC</h1></p>
+            <p class="introname2"><h3>University</h3></p>
+            <div class="stars">
+                <span>Rating:  (3/5) </span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <i style='font-size:24px; margin: 10px 10px 10px 0;' class='fas'>&#xf124;</i>
+            <span>Guntur, Andhra Pradesh</span>
+        </div>
+        <div>
+            <img class="book" src="imgse.jpg" alt="">
+            <p class="book2">Bookmark this university</p>
+        </div>
+    </div>
+    <h2 class="latest">ABC's Latest Notifications</h2>
+    <div class="sod">
+        21 March, 2022 : ABC university Inaugurates Sudha Gopalakrishnan Brain Centre to Map Human Brains <a href="#">Know More</a> <br>
+        20 March, 2022 : ABC university & US University Develop AI-Powered Algorithms to Enhance 3D Effects in Phone Videos <a href="#">Know More</a> <br>
+        19 March, 2022 : IDRP ABC university Ph.D & MS Admission 2022 Open till April 30 <a href="#">Know More</a> <br>
+        19 March, 2022 : ABC M Incubation Cell, RBI Innovation Hub to Develop Fintech Ecosystem in India <a href="#">Know More</a> <br>
+        19 March, 2022 : GATE Cut Off 2022 Released by ABC  Kharagpur. <a style="color:black;" href="#">Know More</a> <br>
+    </div>
+    <br><br><br>
+    <h2 class="latest">About ABC</h2>
+    <div class="sod">
+        ABC University is India's best engineering institute. For the past five years, the NIRF has ranked ABC University at the first position. The institute has 17 departments, 14 research centres, and a Continuing Education Programs Centre (CEP). <br> All of the centres offer 121 courses in Engineering, Science, Humanities, and Management. ABC University has signed MOUs with a number of foreign universities for student exchange programs. As per the MoUs signed, students pursuing UG, PG, and Dual Degree programs at the institute spend a semester abroad for broad exposure. In addition, the institute also offers Joint Doctoral Programs (JDPs) in collaboration with 17 foreign universities. The institute also provides an AICTE-sponsored Quality Improvement Program (QIP).
+        Out of the 121 courses offered by ABC University, BTech and Online Degree program has the highest popularity. BTech is the flagship program of the institute. Admission to the course is done on the basis of rank obtained in the JEE Advanced exam. <br> The minimum rank required for the ABC University BTech program is 85 to 4000. The annual fee for the BTech program is INR 2.05 Lacs. For the BTech admissions, NTA announces JEE Main 2022 exam date. The examination is to be conducted in two sessions. JEE Main dates for both sessions are scheduled from April 21 – May 04 2022 and May 24-29, 2022. Currently, the JEE Main 2022 application form has been released. Last date to fill the form is March 31.
+        ABC University Online Degree is India's first online program in Data Science and Programming. Admission to the degree program is based on Qualifier exam score. The candidates appearing for the Qualifier exams are required to score aggregate 50% marks<br> in the exam. The fees for the online degree program range from INR 50k to 1 Lac. Check More: ABC University Courses & Fees
+        Also, ABC University's placement cell has a strong relationship with the industries. The 2022 placement drive is ongoing. Day 1 of the placement drive witnessed a participation of 226 recruiters. 1316 offers have been made so far. Students also received <br> 231 PPOs. Check more: Do engineering design students at ABC University get a good package?
+        Also, Read: ABC Incubation Cell, RBI Innovation Hub to Develop Fintech Ecosystem in India
+    </div>
+    <br><br><br>
+    <h2 class="latest">Courses Offered</h2>
+    <div class="sod">
+        <h4 class="style1">College of Arts  </h4>
+	
+	  <table width="80%" border="1" align="center" cellpadding="4" cellspacing="1" bgcolor="#999999">
+        <tbody>
+          <tr bordercolor="#FFCCCC">
+            <td width="5%"   bgcolor="#006699"><span style="color: #FFFFFF">S.No </span></td>
+            <td width="55%"   bgcolor="#006699"><span style="color: #FFFFFF"><strong>Course of study </strong></span></td>
+            <td width="20%"   bgcolor="#006699"><span style="color: #FFFFFF"><strong>Intake</strong></span></td>
+            <td width="20%"   bgcolor="#006699"><span style="color: #FFFFFF"><strong>Duration of the Course</strong></span></td>
+          </tr>
+		        <tr bordercolor="#FFCCCC">
+            <td bgcolor="#FFFFFF"  >1 </td>
+            <td bgcolor="#FFFFFF"  >M.A. Economics </td>
+            <td bgcolor="#FFFFFF"  >45 </td>
+            <td bgcolor="#FFFFFF"  >2years </td>
+          </tr>
+		     <td bgcolor="#FFFFFF"  >2 </td>
+            <td bgcolor="#FFFFFF"  >M.A. Rural Development</td>
+            <td bgcolor="#FFFFFF"  >25 </td>
+            <td bgcolor="#FFFFFF"  >2years </td>
+          </tr>
+         
+							
+					
+						<tr>
+							<td style="height: 15px; width: 25px;" bgcolor="#FFFFFF">3.</td>
+							<td style="height: 15px; width: 380px;" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" class=bgcolor="#FFFFFF">
+							M.A Political Science</span></td>
+						<td bgcolor="#FFFFFF"  >25 </td>
+						
+						<td style="height: 15px" bgcolor="#FFFFFF">
+														2 
+							years</td>
+					</tr>
+					<tr>
+						<td style="width: 25px" bgcolor="#FFFFFF">4.</td>
+						<td bgcolor="#FFFFFF"  >M.A. Public Administration</td>
+						<td bgcolor="#FFFFFF" style="width: 132px">25&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="width: 25px" bgcolor="#FFFFFF">5.</td>
+						<td style="width: 380px" bgcolor="#FFFFFF">
+						<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+						M.A Sociology</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">25&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="width: 25px" bgcolor="#FFFFFF">6.</td>
+						<td style="width: 380px" bgcolor="#FFFFFF">
+						<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+						M.S.W (Master of Social Work)</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">40&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">7.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.A History</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">25&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">8.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.A Ancient History &amp; Archaeology</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">25&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">9.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.A Mahayana Buddhist Studies</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">14&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">10.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.A Telugu</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">40&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">11.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.A Sanskrit</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">15&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">12.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.A English</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">40&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">13.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.A Hindi</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">40&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">14.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.Com</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">45&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">15.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.B.A</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">90&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">16.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.B.A (International Business)</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">30&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">17.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.B.A (Hospital Administration)</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">30&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">18.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF"><![if !supportLists]>
+							<span style="mso-list: Ignore">
+							<span lang="EN-US" style="font-size: 12.0pt; line-height: 115%;" font-family: "Bookman Old Style","serif"; mso-fareast-font-family: "Bookman Old Style"; mso-bidi-font-family: "Bookman Old Style"">
+							<span style="font-style: normal; font-variant: normal; font-weight: normal; line-height: normal;" bgcolor="#FFFFFF">&nbsp;</span></span></span><![endif]><span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">M.H.R.M<span style="mso-tab-count:8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">35&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">19.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.T.T.M(Master of Tourism and Travel Management)</span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">35&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">20.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							LL.M<span style="mso-tab-count:8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">40&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">21.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.A Journalism &amp; Mass Communication<span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">30&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">22.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.Ed.,<span style="mso-tab-count:8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">35&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+						</tr>
+						<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">23.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							P.G. Diploma in Ambedkar Studies<span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">30&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+							<tr>
+							<td style="width: 25px" bgcolor="#FFFFFF">24.</td>
+							<td style="width: 380px" bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							M.L.I.Sc<span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></td>
+						<td bgcolor="#FFFFFF" style="width: 132px">20&nbsp;</td>
+						<td bgcolor="#FFFFFF">
+							<span lang="EN-US" style="line-height: 115%;" bgcolor="#FFFFFF">
+							2 
+							years<o:p></o:p></span>&nbsp;&nbsp;</td>
+
+        </tbody>
+      </table>
+	</div>
+	
+	<div class="topbarcss">
+	<h4 class="style1" style="margin: 20px;">College of Science </h4>
+     
+	
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	  <table width="80%" border="1" align="center" cellpadding="4" cellspacing="1" bgcolor="#999999">
+        <tbody>
+          <tr bordercolor="#FFCCCC">
+            <td width="5%"   bgcolor="#006699"><span style="color: #FFFFFF">S.No </span></td>
+            <td width="55%"   bgcolor="#006699"><span style="color: #FFFFFF"><strong>Course of study </strong></span></td>
+            <td width="20%"   bgcolor="#006699"><span style="color: #FFFFFF"><strong>Intake</strong></span></td>
+            <td width="20%"   bgcolor="#006699"><span style="color: #FFFFFF"><strong>Duration of the Course</strong></span></td>
+          </tr>
+		 
+		        <tr bordercolor="#FFCCCC">
+         <td bgcolor="#FFFFFF"  ><span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px">1.</span></td>
+							<td bgcolor="#FFFFFF" ><span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px">
+									  M.Sc. Aquaculture</span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							<span lang="EN-US" style="line-height: 115%;" class=style="color: #FFFFFF"><span style="mso-tab-count:
+3">30&nbsp;&nbsp; </span></span>&nbsp;</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							<span lang="EN-US" style="line-height: 115%;" class=style="color: #FFFFFF">
+							<span style="mso-tab-count: 1">&nbsp;</span>2 
+							years
+					<o:p></o:p></span>&nbsp;&nbsp;</td>
+				  </tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">2.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="font-size:12.0pt;line-height:115%;"font-family:"Bookman Old Style","serif"">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+					M.Sc Bio-chemistry</span></span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							24</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">3.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="font-size:12.0pt;line-height:115%;"font-family:"Bookman Old Style","serif"">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+					M.Sc. Biotechnology</span></span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							24</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">4.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="font-size:12.0pt;line-height:115%;"font-family:"Bookman Old Style","serif"">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+					M.Tech Biotechnology					</span></span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							20</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">5.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="font-size:12.0pt;line-height:115%;"font-family:"Bookman Old Style","serif"">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+					M.Sc. Botany</span></span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							40</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">6.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="font-size:12.0pt;line-height:115%;"font-family:"Bookman Old Style","serif"">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+					M.Sc. Chemistry</span></span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							42</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">7.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="font-size:12.0pt;line-height:115%;"font-family:"Bookman Old Style","serif"">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+					M.Sc. Electronics &amp; Instrumentation Technology</span></span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							16</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">8.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="font-size:12.0pt;line-height:115%;"font-family:"Bookman Old Style","serif"">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+					M.Sc. Environmental Sciences</span></span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							24</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">9.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="font-size:12.0pt;line-height:115%;"font-family:"Bookman Old Style","serif"">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+					M.Sc. Foods &amp; Nutritional Science					</span></span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							28</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">10.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+							M.Sc. Geology</span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							18</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">11.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+						  M.C.A.&nbsp;					</span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							60</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							3 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">12.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+						  M.Sc. Mathematics					</span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							55</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">13.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+							M.Sc. Microbiology</span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							28</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">14.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+						  M.Sc. Nano-Biotechnology&nbsp;					</span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							24</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">15.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+						  M.Sc. Nano-Technology&nbsp;					</span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							40</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							5 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">16.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+							M.Sc. Physics</span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							40</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">17.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+						  M.Sc. Statistics					</span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							25</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">18.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+						  M.Sc. Statistics (QR &amp; OR)					</span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							20</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+						</tr>
+						<tr>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 25px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" #FFFFFF">19.</td>
+							<td bgcolor="#FFFFFF" class=style="color: style="width: 380px" #FFFFFF">
+					<span lang="EN-US" style="line-height: 115%;; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px" class=style="color: #FFFFFF">
+						  M.Sc. Zoology&nbsp;					</span></td>
+							<td bgcolor="#FFFFFF" class="style74" style="width: 132px">
+							42</td>
+							<td bgcolor="#FFFFFF" class="style74">
+							2 years</td>
+        </tbody>
+      </table>
+	</div>
+      </td>
+  </tr>
+</table>
+    </div>
+    <br><br><br>
+    <h3 class="latest">Table of Contents</h3>
+    <div style="background:#eee;border:1px solid #ccc;padding:5px 10px; margin: 20px;"><strong></strong>
+
+        <ol>
+            <li><a style="color: black;" href="#b">ABC University Ranking</a></li>
+            <li><a style="color: black;" href="#c">ABC University Courses</a></li>
+            <li><a style="color: black;" href="#d">ABC University BTech</a></li>
+            <li><a style="color: black;" href="#e">ABC University MTech</a></li>
+            <li><a style="color: black;"href="#f">ABC University PhD</a></li>
+            <li><a style="color: black;" href="#g">ABC University Online Courses</a></li>
+            <li><a style="color: black;" href="#h">ABC University Placements</a></li>
+            <li><a  style="color: black;" href="#i">ABC University Scholarships</a></li>
+            <li><a style="color: black;" href="#j">ABC University Faculty</a></li>
+            <li><a style="color: black;" href="#k">ABC University Notable Alumni</a></li>
+            <li><a style="color: black;" href="#cm">ABC University vs IIT Bombay: Which is better for BTech?</a></li>
+            <li><a style="color: black;" href="#faq_id">ABC University FAQs</a></li>
+        </ol>
+    </div>
+    <br><br>
+    <h2 id="b" class="latest"><strong>IIT Madras Ranking</strong></h2>
+
+<div>
+<p style="margin: 20px;">Being the best Engineering institute in India, the Indian Institute of Technology Madras has been ranked by recognizing platforms for its excellence in the field. Some of the rankings are as follows:&nbsp;</p>
+
+<ol style="margin: 20px;">
+	<li>Ranked 1 in the ARIIA rankings 2021.</li>
+	<li>Ranked 1 in the Overall category by NIRF 2021</li>
+	<li>Ranked 1 in the Engineering category by NIRF 2021</li>
+	<li>Ranked at #255 by the QS Global World Rankings 2022</li>
+	<li>Ranked 50<sup>th</sup> by the QS Asia Rankings 2021</li>
+	<li>Ranked 1<sup>st</sup>&nbsp;in Engineering as well as&nbsp;Overall categories by NIRF Ranking 2020.</li>
+	<li>Ranked 1<sup>st</sup>&nbsp;in the Engineering category by Outlook Ranking 2019</li>
+	<li>Ranked 2<sup>nd</sup>&nbsp;internationally by&nbsp;ARWU Ranking 2019</li>
+	<li>Ranked 1<sup>st</sup>&nbsp;in Engineering category by Jagranjosh Ranking 2019</li>
+	<li>Ranked&nbsp;#200 - #250 internationally by Times Higher Education Ranking 2020</li>
+	<li>Ranked 4<sup>th</sup>&nbsp;overall by&nbsp;QS Ranking 2020</li>
+	<li>Ranked 654<sup>th</sup>&nbsp;overall internationally by&nbsp;US News Ranking 2020</li>
+	<li>Ranked 3<sup>rd</sup>&nbsp;in Engineering category by&nbsp;The Week Ranking 2019.&nbsp;</li>
+</ol>
+</div>
+<br><br>
+<h2 id="c" class="latest">IIT Madras Courses</h2>
+<div  style="margin: 20px;" class="cdcms_courses">
+
+<p>IIT Madras offers more than 100 courses through Undergraduate, Postgraduate, and Research degrees. The courses offered are in the streams of Engineering, Sciences, Humanities, and Management. Admission to these courses is based on national-level exam scores such as JEE Advanced, GATE, and IIT JAM. Given below is a brief about the programs with their eligibility:</p>
+
+<div class="table-responsive"><table border="1" cellpadding="0" cellspacing="0" class="table">
+	<tbody>
+		<tr>
+			<td><strong>Program</strong></td>
+			<td><strong>Eligibility</strong></td>
+			<td><strong>IIT Madras Fees/year</strong></td>
+		</tr>
+		<tr>
+			<td><a href="#" target="_blank">B.Tech</a></td>
+			<td><strong>Eligibility:</strong> The&nbsp;applicant must have passed 10+2 in the PCM stream with a minimum of 50% marks.<br>
+			<strong>Selection Criteria:</strong>&nbsp;<a href="#" target="_blank">JEE Advanced</a> + <a href="#" target="_blank">JoSAA Counselling</a></td>
+			<td>INR 2,04,650</td>
+		</tr>
+		<tr>
+			<td><a href="#" target="_blank">M.Tech</a></td>
+			<td>
+			<p><strong>Eligibility:</strong> Graduation&nbsp;in a relevant subject (B.E./ B.Tech) with at least 6.5 CGPA (on 10 point scale) or 60% marks from a recognized Institute<br>
+			<strong>Selection Criteria:</strong>&nbsp;<a href="#" target="_blank">GATE</a> Score + <a href="#" target="_blank">COAP Counselling</a> followed by Written Test and/or Interview</p>
+			</td>
+			<td>INR 2,11,847</td>
+		</tr>
+		<tr>
+			<td>B.Tech+M.Tech (Dual Degree)</td>
+			<td><strong>Eligibility:</strong> Class 12 with 60% aggregate marks (55% for SC/ST/PWD)<br>
+			<strong>Selection Criteria:</strong> JEE Advanced and JoSAA Counselling</td>
+			<td>INR 75,116</td>
+		</tr>
+		<tr>
+			<td><a href="#" target="_blank">M.Sc</a></td>
+			<td><strong>Eligibility:</strong> Bachelor&rsquo;s degree in respective discipline with minimum 55% aggregate marks<br>
+			<strong>Selection Criteria:</strong>&nbsp;<a href="#" target="_blank">IIT JAM</a>&nbsp;</td>
+			<td>INR&nbsp;17,670</td>
+		</tr>
+		<tr>
+			<td><a href="#" target="_blank">MBA</a></td>
+			<td><strong>Eligibility:</strong> Bachelor&rsquo;s degree in Engineering /Technology/ Architecture /Pharmacy / B.Sc. Agri. Engg. (Minimum 4 year after 10+2) with at least 60% marks<br>
+			<strong>OR</strong><br>
+			Master&rsquo;s degree in any branch of Chemistry/ Computer Application, Physics/ Mathematics/ Statistics/ Environmental Science or Computational/ Information Sciences/ Electronics Sciences/ Agriculture/ Economics/ Commerce with minimum 60% marks<br>
+			<strong>Selection Criteria:</strong>&nbsp;<a href="#" target="_blank">CAT</a>, Group Discussion and Interview Round</td>
+			<td>INR 6,00,000&nbsp;</td>
+		</tr>
+		<tr>
+			<td><a href="#" target="_blank">Ph.D</a></td>
+			<td>
+			<p><strong>Eligibility:</strong> M.E/ M.Tech or MD degree with at least 60% (55% for SC/ST/PH) marks in aggregate<br>
+			<strong>OR</strong><br>
+			60% (55% for SC/ST/PH) marks in MBBS/ M.Sc/ MBA/ MA<br>
+			<strong>OR</strong><br>
+			Minimum 70% marks in B.E/B.Tech<br>
+			<strong>Selection Criteria:</strong>&nbsp;GATE/ UGC-NET/ CSIR-NET/ ICAR or ICMR score OR Written Test and Interview</p>
+			</td>
+			<td>INR 19,670</td>
+		</tr>
+	</tbody>
+</table></div>
+</div>
+
+<br><br>
+<h2 id="d" class="latest">IIT Madras BTech</h2>
+<div style="margin: 20px;">
+<p>The BTech program at IIT Madras is placed in the first position by the NIRF. The program is specialized in 9 streams. The total intake capacity of the&nbsp;<strong>IIT Madras BTech</strong>&nbsp;program is 877 seats. The per semester fee for the program is INR 1,00,550. The BTech program gives a good return on investment. For the INR 8.08 Lacs of the fee for the whole program, the students get an average salary package of INR 20 LPA in the placement process. The most opted branch of the BTech program is the CSE.&nbsp;</p>
+
+<p>The cutoff for the&nbsp;<strong>IIT Madras CSE</strong>&nbsp;is highest among all the streams. The cutoff rank for the course is 85-163 in the JEE Advanced exam. The placement rate of the CSE branch is 84%. Students pursuing the CSE branch receive a higher package of INR 70 LPA, an average salary package of INR 25 LPA, and the lowest salary of INR 9 LPA. <span style="color:#FF0000;">Read onto,</span>&nbsp;<a data-mce-href="https://collegedunia.com/qna/question/12369-what-is-it-like-to-be-a-student-at-iit-madras" href="https://collegedunia.com/qna/question/12369-what-is-it-like-to-be-a-student-at-iit-madras" target="_blank">What is it like to be a student at IIT Madras?</a></p>
+<br><br>
+<h2 class="latest">IIT Madras&nbsp;Cutoff 2022&nbsp;(Expected)</h2>
+<div style="margin: 20px;">
+<div class="table-responsive"><table border="1" cellpadding="0" cellspacing="0" class="table">
+	<tbody>
+		<tr>
+			<td><strong>Courses</strong></td>
+			<td><strong>IIT Madras BTech Cutoff 2021 (Opening &amp; Closing ranks)</strong></td>
+		</tr>
+		<tr>
+			<td>Aerospace Engineering&nbsp;</td>
+			<td>190-3259</td>
+		</tr>
+		<tr>
+			<td>Chemical Engineering&nbsp;</td>
+			<td>2401-4055</td>
+		</tr>
+		<tr>
+			<td>Civil Engineering&nbsp;</td>
+			<td>3515-5740</td>
+		</tr>
+		<tr>
+			<td>Computer Science and Engineering&nbsp;</td>
+			<td>85-163</td>
+		</tr>
+		<tr>
+			<td>Electrical Engineering&nbsp;</td>
+			<td>280-1009</td>
+		</tr>
+		<tr>
+			<td>Engineering Physics</td>
+			<td>833-1884</td>
+		</tr>
+		<tr>
+			<td>Mechanical Engineering&nbsp;</td>
+			<td>757-2491</td>
+		</tr>
+		<tr>
+			<td>Metallurgical and Materials Engineering&nbsp;</td>
+			<td>3595-5800</td>
+		</tr>
+		<tr>
+			<td>Naval Architecture and Ocean Engineering&nbsp;</td>
+			<td>5512-8085</td>
+		</tr>
+	</tbody>
+</table></div>
+</div>
+</div>
+<br><br>
+<h2 class="latest">IIT Madras MTech</h2>
+<div style="margin: 20px;" class="cdcms_placement">
+
+<p>IIT Madras 2-year MTech program is specialized in 35 streams. Admission to the M.Tech program is based on the 500-700 GATE scores followed by a written test and personal interview conducted by the institute. IIT graduates who have a CGPA of 8.0 and above can also apply without GATE scores. The total fee for the program is INR 4.18 Lacs and the salary package received by the students generally ranges between INR 50-60 LPA. <span style="color:#FF0000;">Compare:</span>&nbsp;<a data-mce-href="https://collegedunia.com/qna/question/12055-which-is-better-for-an-mtech-iit-delhi-or-iit-madras" href="https://collegedunia.com/qna/question/12055-which-is-better-for-an-mtech-iit-delhi-or-iit-madras" target="_blank">Which is better for an MTech: IIT Delhi or IIT Madras?</a></p>
+
+<p>Candidates applying through GATE exam scores can check <strong>GATE 2022 results</strong>, released on March 16. The authority has also announced the <a href="https://collegedunia.com/exams/gate/cutoff" target="_blank">GATE 2022 cut off marks</a> along with the results. Candidates qualifying the GATE exam can apply for the IIT Counselling process. For the same, <a href="https://collegedunia.com/exams/gate/iit-counselling" target="_blank">COAP 2022 registration</a> has already started on March 20. Candidates eligible for the counselling process must check- <a href="https://collegedunia.com/exams/gate/iit-counselling#9" target="_blank">GATE COAP 2022 Online registration</a></p>
+
+<p>Also, <strong>IIT Madras PG admission</strong> for the MTech program will begin from March 21 onwards. The last date of application is April 22, 2022. Candidates applying for admission must go through <a href="http://images.static-collegedunia.com/public/image/9bdc058274b93286be2b83a529b599c2.pdf" target="_blank">IIT Madras GATE Cutoff 2021</a> to get an idea about the admissions 2022.</p>
+<br><br>
+<h2 id="f" class="latest">IIT Madras PhD</h2>
+
+<p style="margin: 20px;">IIT Madras PhD is a 5 year program currently offered in 5 departments, namely, Engineering, Science, Humanities, Social Sciences, and Management. For admission to the research program, candidates with 60% aggregate marks, a Master&rsquo;s degree in a relevant field, and a valid GATE or UGC-JRF/NET/CSIR-JRF score can apply for admission. Candidates with a master&rsquo;s degree from IITs with a CGPA of 8.0 and above can apply directly for admission. However, the final selection of the candidate for the program is done only after the interview round conducted by the institute.Direct admission to PhD program at IIT Madras</a></p>
+<br><br>
+<h2 id="g" class="latest">IIT Madras Online Courses</h2>
+<div style="margin: 20px;"></div>
+<p>The Indian Institute of Technology, Madras has introduced a substitute for Online Degrees. The substitute allows students to study for an undergraduate degree or diploma anywhere in India. The program has no limits on age and academic background. The programs offered under the IIT Madras Online Courses/ Degree include Foundation + Diploma in Programming or Foundation + Diploma in Data Science and B.Sc in Programming and Data Science. The basic eligibility criteria for these programs require a student to have studied Mathematics and English in their 10 and should have previously/ currently enrolled in any of the bachelor's degree programs or diplomas.</p>
+
+<p>The interested students can enroll in the online courses either via regular mode or diploma-only entry. Students registering via regular mode are required to join at the Foundation level, which consists of 8 courses. Students registering at the Diploma Only Entry cannot proceed with their diploma towards the BSc degree.&nbsp;</p>
+</div><br><br>
+<h2 id="h" class="latest"><strong>IIT Madras Placements</strong></h2>
+<div style="margin: 20px;">
+<p>IIT Madras Placements 2022 is in progress. Day 1 of the placement drive witnessed a participation of 226 recruiters. Major recruiters included Bajaj, Auto, Goldman Sachs, JP Morgan, American Express, Microsoft India and many more. Recruiters came from varipus sectors, like Core Engineering, Data Science &amp; Analytics etc. The major highlights of the placement drive are tabulated below:</p>
+
+<div class="table-responsive"><table border="1" cellpadding="0" cellspacing="0" class="table">
+	<tbody>
+		<tr>
+			<td><strong>Particulars</strong></td>
+			<td><strong>Placements Statistics (2021-22)</strong></td>
+		</tr>
+		<tr>
+			<td>Number of recruiters</td>
+			<td>226 (Day 1)</td>
+		</tr>
+		<tr>
+			<td>Number of offers</td>
+			<td>1316</td>
+		</tr>
+		<tr>
+			<td>Number of International offers</td>
+			<td>45</td>
+		</tr>
+		<tr>
+			<td>PPOs</td>
+			<td>231</td>
+		</tr>
+		<tr>
+			<td>Major Sector</td>
+			<td>Core Engineering (42%)</td>
+		</tr>
+		<tr>
+			<td>Major recruiters</td>
+			<td>American Express, Microsoft India Pvt Ltd, Bajaj Auto Pvt Ltd, EXL Service etc.</td>
+		</tr>
+	</tbody>
+</table></div>
+</div>
+<br><br>
+<h3 class="latest">IIT Madras Summer Internship Placements</h3>
+<div style="margin: 20px;">
+<p>The institute also concluded its 2021 summer internship placement drive. The summer internship placement drive engaged 140 recruiters who provided internship opportunities to the 964 participating students out of which 619 students placed. The major highlights are mentioned in the below trable:</p>
+
+<div class="table-responsive"><table border="1" cellpadding="0" cellspacing="0" class="table">
+	<tbody>
+		<tr>
+			<td>Batch</td>
+			<td>2020-2021</td>
+		</tr>
+		<tr>
+			<td>Number of Recruiters</td>
+			<td>140</td>
+		</tr>
+		<tr>
+			<td>Number of Students Participated</td>
+			<td>964</td>
+		</tr>
+		<tr>
+			<td>Number of Students Placed</td>
+			<td>619</td>
+		</tr>
+		<tr>
+			<td>Percentage of Students Placed</td>
+			<td>64.01%</td>
+		</tr>
+		<tr>
+			<td>Total Number of Offers</td>
+			<td>623</td>
+		</tr>
+		<tr>
+			<td>Major Sector</td>
+			<td>IT &amp; Software Development</td>
+		</tr>
+		<tr>
+			<td>Top Recruiters</td>
+			<td>Adobe, Axis Bank, BHEL, Citi Bank</td>
+		</tr>
+	</tbody>
+</table></div>
+</div>
+</div>
+<br><br>
+<div class="cdcms_scholarships">
+<h2 class="latest"><strong>IIT Madras Scholarships&nbsp;</strong></h2>
+<div style="margin: 20px;">
+<p>To encourage meritorious students and help needy students with financial support, IIT Madras offers different types of scholarships and fee waivers. There are several schemes available for financial assistance by alumni, companies, Govt. of India, and institute at IITM. The following scholarships are famous among IITM students.</p>
+
+<ol>
+	<li><strong>Institute Merit-cum-Means Scholarships: </strong>IITM offers up to <strong>67% tuition fee exemption</strong> to only 25% of students admitted. Students whose annual parental income is less than INR 4.5 Lakhs are eligible to apply for MCM scholarships. Also, the subject of renewing this scholarship is a minimum GPA of 5.0 in the previous semester.</li>
+	<li><strong>Institute Free Studentship: </strong>Likewise MCM scholarship, IIT Madras offers a <strong>free studentship</strong> for the students whose annual parental income is less than INR 4,50,000 lakhs. Students are exempted from the payment of 67% of the tuition fee under this scheme. However, the scholarship is <strong>only offered to 25% of the UG students</strong>.</li>
+	<li><strong>Institute Notional Prize: </strong>&nbsp;On the basis of the JEE rank and annual parental income not exceeding INR 4,50,000, IITM offers a <strong>one-time grant of INR 1000 to the 7% of the students admitted</strong>.</li>
+	<li><strong>SC/ST Scholarship: </strong>IITM offers renewable institute SC/ST scholarship especially for the students belonging from SC/ST categories whose annual parental income doesn&rsquo;t exceed INR 4,50,000. Students under this scheme are offered <strong>tuition fee exemption along with a free messing and monthly pocket allowance of INR 250</strong>.&nbsp;</li>
+</ol>
+</div>
+<br><br>
+<h2 class="latest"><strong>IIT Madras Faculty</strong></h2>
+
+<div style="margin: 20px;" class="cdcms_faculty">
+<p>Indian Institute of Technology Madras has a large and diverse faculty of 630 members in total across all academic departments, with all of them holding Ph.D.&nbsp;in their respective fields. The best in class faculty members are all alumni from reputed national and international universities, and hold an immense amount of experience in their disciplines. The faculty members include professors, assistant professors, associate professors, and others. They are all extremely encouraging toward students to clarify all their concepts and doubts, even outside of the classroom and lectures. Teachers follow interactive and unique methods to impart education to students.&nbsp;</p>
+
+</div><br><br>
+<h2 id="k" class="latest"><strong>IIT Madras Facilities</strong></h2>
+<div style="margin: 20px;" class="cdcms_section1">
+
+<p>Being the most reputed Engineering institute in the country, the&nbsp;Indian&nbsp;Institute of Technology Madras&nbsp;takes care of all requirements that students have on campus. Students at IIT Madras can enjoy convenient and enriching campus life with the following facilities:&nbsp;</p>
+
+<ol>
+	<li><strong>Hostel</strong>: There are hostels available for both boys and girls&nbsp;on the college campus. The hostels are laid out with green lawns and many amenities available to residents such as&nbsp;libraries, common rooms, indoor games, TV, delicious mess food, music rooms, dance rooms and more.&nbsp;The Hostel Library has a great&nbsp;collection of general books, fiction, comics, and more.</li>
+	<li><strong>Library:&nbsp;</strong>&nbsp;The central library at IIT Madras has around 20,00,000 books covering all disciplines of science, engineering, technology, humanities &amp; social science.&nbsp;</li>
+	<li><strong>Medical Facilities</strong>: There is a hospital available on campus that is in service 24x7. In case of severe emergencies, students can also be transported to the hospital in an ambulance.&nbsp;</li>
+	<li><strong>Food</strong>: Along with the mess facility provided to hostel residents at IIT Madras, the food court is also available to students. The food court offers various delicacies on the menu, serving meals and dishes from all across parts of India.</li>
+	<li><strong>Sports:</strong>&nbsp;Students at IIT Madras receive a number of sports facilities on campus including a&nbsp;Swimming pool of Olympic standards, a well-equipped gymnasium, the impressive IIT-Chemplast cricket ground, a vast stadium, and a hi-tech wood-floored multipurpose indoor stadium in the Students' Activities' Center.&nbsp;</li>
+</ol>
+</div>
+<br><br>
+<h2 class="latest">IIT Madras Notable Alumni</h2>
+<div style="margin: 20px;">
+<p>The notable alumni of IIT Madras are currently working in various sectors such as Engineering, Business Development, Marketing, HR, etc. The alumni have represented the country nationally and internationally through their social work and entrepreneurships. Some of the IIT Madras Top alumni are tabulated below:</p>
+
+<div class="table-responsive"><table border="1" cellpadding="0" cellspacing="0" class="table">
+	<tbody>
+		<tr>
+			<td><strong>Name</strong></td>
+			<td><strong>Job position</strong></td>
+			<td><strong>Degree pursued from IIT Madras</strong></td>
+		</tr>
+		<tr>
+			<td><img alt="IIT Madras Alumni- Ramanathan V Guha" height="91" class="clgdn_lazyload " data-src="https://images.static-collegedunia.com/public/image/fe4ecad6acd9e4df96a48078fc6e2ed5.jpeg" width="162"><br>
+			Ramanathan V. Guha</td>
+			<td>Creator of widely used web standards such as RSS, RDF and Schema.org. He is also responsible for products such as Google Custom Search.</td>
+			<td>BTech in Mechanical Engineering</td>
+		</tr>
+		<tr>
+			<td><img alt="IIT Madras Alumni- Venky Harinarayn" height="98" class="clgdn_lazyload " data-src="https://images.static-collegedunia.com/public/image/4cf6b73360d32789048ff70ffc81f7e9.jpeg" width="163"><br>
+			Venky Harinarayan</td>
+			<td>Co-founder of Cambrian Ventures and Kosmix. Harinarayan also Co-founded Junglee Corp</td>
+			<td>BTech in Computer Science Engineering</td>
+		</tr>
+		<tr>
+			<td><img alt="IIT Madras Alumni- Kris Gopalkrishnan" height="91" class="clgdn_lazyload " data-src="https://images.static-collegedunia.com/public/image/9a5a5619e7c139eaaa2003e106a10f50.webp" width="162"><br>
+			Kris Gopalakrishnan</td>
+			<td>Popularly known as Kris Gopalakrishnan, is Chairman of Axilor Ventures. He is also a former Executive Vice Chairman of Infosys</td>
+			<td>M.Sc in Physics and MTech in Computer Science</td>
+		</tr>
+		<tr>
+			<td><img alt="IIT Madras Alumni- Krishna Bharat" height="91" class="clgdn_lazyload " data-src="https://images.static-collegedunia.com/public/image/6ee1c3e93f3543cd5896107e6519dccf.jpeg" width="162"><br>
+			Krishna Bharat</td>
+			<td>Indian research scientist at Google Inc.<br>
+			In 2015, Krishna received the Distinguished Alumnus Award from his&nbsp;Alma mater&nbsp;IIT Madras.</td>
+			<td>BTech in CSE</td>
+		</tr>
+		<tr>
+			<td><img alt="IIT Madras Alumni- Vishwas Sringi" height="91" class="clgdn_lazyload " data-src="https://images.static-collegedunia.com/public/image/f02a8e50416dce71c89d178d2dafd169.jpeg" width="162"><br>
+			Vishwas Shringi</td>
+			<td>CoFounder at Voylla Retail Private Ltd.</td>
+			<td id="cm">BTech in Chemical Engineering</td>
+		</tr>
+	</tbody>
+</table></div>
+</div>
+</body>
+<br><br>
+<h3 class="latest">Alumni Login/ Register</h3>
+<div style="margin: 20px;">
+    <a style="color: #384047; margin: 15px;" href="">Login</a>
+    <a style="color: #384047; margin: 15px;" href="">Register</a>
+</div>
+<br><br>
+<h3 class="latest">Feedback</h3>
+<div style="margin: 20px;">
+    <textarea rows="30" cols="100">
+        Provide Feedback
+    </textarea>
+</div>
+<br><br><br><br><br>
+<footer>
+    <div class="foot">
+        <div class="logo">
+            <a href="">AllUniv</a>
+        </div>
+        <div class="details">
+            <a href="#" class="tata">Details</a><br>
+            <a href="#" class="tata">Contact</a><br>
+            <a href="#" class="tata">Help and FAQs</a><br>
+            <a href="#" class="tata">Services</a><br>
+        </div>
+        <div>
+          <p class="matter" style="color: #f2f2f2;">
+            A student wants to join in any course provided in universities of India,<br>
+             he/she can compare and decide according to criteria.
+            <br>Login as alumni to provide ratings, institution to provide researches, specializations etc .<br>
+             This is an interlinked platform that acts as a simple student guide
+          </p>
+        </div>
+        <div class="soc">
+            <a href="#" class="fa fa-facebook"></a><br>
+            <a href="#" class="fa fa-twitter"></a><br>
+            <a href="#" class="fa fa-google"></a><br>
+            <a href="#" class="fa fa-linkedin"></a><br>
+        </div>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/43dcc20e7a.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>

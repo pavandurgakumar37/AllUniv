@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllUniv</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    html{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+  background-color: #384047;
+}
+
+.wrapper {
+  border-radius: 5px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: #343436;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+}
+
+ul li a {
+  margin-left: 1.5em;
+}
+
+a.logo {
+  margin-right: auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  font-size: 1.25em;
+}
+
+a::after {
+  content:"";
+  top: 80%;
+  border-bottom: 2px solid #F8E71C;
+  transition: all 0.35s;
+  position: absolute;
+}
+
+a:hover::after {
+  transition: all 0.35s;
+}
+
+a::after {
+  right: 50%;
+  left: 50%;
+}
+
+a:hover::after {
+  right: 0;
+  left: 0;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    height: auto;
+  }
+  
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  a.logo {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-right: 0px;
+  }
+  
+  ul {
+    width: 100%;
+    margin-bottom: 1em;
+    justify-content: space-between;
+  }
+  
+  ul li a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  a.logo {
+    margin: 1.5em;
+  }
+  
+  ul {
+    flex-direction: column;
+  }
+  
+  ul li {
+    margin: 0.3em;
+    text-align: center;
+  }
+  
+  ul li a {
+    margin-left: 0px;
+  }
+}
+body{
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+.search-box{
+  width: 100%;
+  position: relative;
+  display: flex;
+
+}
+.search-input{
+  width: 100%;
+  padding: 10px;
+  border: 4px solid #111d5e;
+  border-radius:10px 0 0 10px ;
+  border-right: none;
+  outline: none;
+  font-size: 20px;
+  color: tomato;
+  background: none;
+}
+.search-button{
+ text-align: center;
+height: 51px;
+width: 40px;
+outline: none;
+cursor: pointer;
+border: 4px solid #111d5e;
+ border-radius: 0 10px 10px 0 ;
+border-left: none;
+background: none;
+font-size: 20px;
+border-left: 4px solid #111d5e;
+
+
+}
+.container{
+  width: 35%;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  transform: translate(360px, -200px);
+}
+.blocks{
+    display: flex;
+}
+.univ{
+    color:aquamarine;
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+p{
+    color: black;
+}
+.burger{
+    color: white;
+    transform: translate(-10px , 40px );
+    height:40px;
+    width:40px;
+}
+.above{
+    transform: translateY(-20px );
+}
+.prem{
+    height: 20px;
+    width: 20px;
+}
+.ims{
+    transform: translate(1200px, -100px);
+    height: 30px;
+    width: 30px;
+}
+.dash, .types{
+    display: flex;
+}
+.your{
+    margin-right: 10px;
+    margin-left: 60px;
+}
+.foot{
+    display: flex;
+    background-color: black;
+    padding:70px 10px 20px 10px;
+}
+.logo, .details, .soc{
+    margin:50px;
+}
+.burger1, .burger2, .burger3, .burger4{
+    transform: translate(-10px , 50px );
+    margin-right: 20px;
+    margin-left: 100px;
+}
+.tata{
+  margin: 70px;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  border-radius: 10px;
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  border-radius: 10px;
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  border-radius: 10px;
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  border-radius: 10px;
+  background: #007bb5;
+  color: white;
+}
+.rod{
+  line-height: 30px;
+  margin-left: 30px;
+}
+.central{
+
+  background-color: #343436;
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  margin: 40px 150px 40px 100px ;
+}
+/*
+div img{
+  height: 200px;
+  width: 200px;
+}*/
+.names{
+  margin-left: 90px;
+}
+.matter{
+  margin-top: 50px;
+}
+</style>
+
+<body>
+    <div class="wrapper">
+        <nav>
+          <div class="prem"><ion-icon class="burger" name="menu-outline"></ion-icon></div>
+          <a href="#" class="logo">AllUniv</a>
+          <a href="" class="burger1">About</a>
+          <a href="" class="burger2">Explore</a>
+          <a href="" class="burger3">Top List</a>
+          <a href="" class="burger4">FAQ</a>
+          <a href="" class="burger5">Account</a>
+          <ul>
+            <li>
+              <a class="above" href="#">About</a>
+            </li>
+            <li>
+              <a class="above" href="#">Explore</a>
+            </li>
+            <li>
+              <a class="above" href="#">Top List</a>
+            </li>
+            <li>
+              <a class="above" href="#">FAQ</a>
+            </li>
+            <li>
+                <div class="container">
+                    <div class="search-box">
+                       <input type="text" class="search-input" placeholder="Search..">
+                 
+                       <button class="search-button">
+                         <i class="fas fa-search"></i>
+                       </button>
+                    </div>
+                 </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <br><br><br><br><br><br>
+      <div class="blocks">
+        <div class="univ">
+            <a href=""><p>Central Universities</p></a>
+        </div>
+        <div class="univ">
+            <a href=""><p>State Universities</p></a>
+        </div>
+        <div class="univ">
+            <a href=""><p>Deemed Universities</p></a>
+        </div>
+        <div class="univ">
+            <a href=""><p>Private Universities</p></a>
+        </div>
+    </div>
+    <div class="ims">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2D220wb3BF_vNv1ZWnmSF3vf4CSohJDt_6w&usqp=CAU" alt="dashboard"></a>
+        <div class="dash">
+            <div class="your">Your</div>
+            <div>Dashboard</div>
+        </div>
+    </div>
+</body>
+
+<br><br><br><br><br><br><br>
+<p class="rod">
+    An integrated platform provides the details
+     of all the universities of India , in view of different courses provided, rating, <br>
+       location based and compare any of them through dashboard provided by login as student or alumni or institute.
+	In this integrated platform ,<br> the data is collected from different sources
+   and store in a database and retrieve based on filter or query as user entered.
+
+</p>
+<br><br><br><br>
+<div class="types">
+  <div >
+    <img class="central" src="https://www.alcindia.org/assets/india-map.jpg" alt=""> 
+    <p class="names">Central Universities</p>
+  </div>
+  <div >
+    <img class="central" src="https://i.pinimg.com/736x/03/34/43/0334430c8c983c47480611aa2eefbb30.jpg" alt="">
+    <p class="names">State Universities</p>
+  </div>
+  <div >
+    <img class="central" src="data:image/png;base64,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" alt="">
+    <p class="names">Deemed Universities</p>
+  </div>
+  <div>
+    <img class="central" src="https://cdn.dribbble.com/users/5236815/screenshots/16784323/private-logo_4x.png" alt="">
+    <p class="names">Private Universities</p>
+  </div>
+</div>
+<footer>
+    <div class="foot">
+        <div class="logo">
+            <a href="">AllUniv</a>
+        </div>
+        <div class="details">
+            <a href="#" class="tata">Details</a><br>
+            <a href="#" class="tata">Contact</a><br>
+            <a href="#" class="tata">Help and FAQs</a><br>
+            <a href="#" class="tata">Services</a><br>
+        </div>
+        <div>
+          <p class="matter" style="color: #f2f2f2;">
+            A student wants to join in any course provided in universities of India,<br>
+             he/she can compare and decide according to criteria.
+            <br>Login as alumni to provide ratings, institution to provide researches, specializations etc .<br>
+             This is an interlinked platform that acts as a simple student guide
+          </p>
+        </div>
+        <div class="soc">
+            <a href="#" class="fa fa-facebook"></a><br>
+            <a href="#" class="fa fa-twitter"></a><br>
+            <a href="#" class="fa fa-google"></a><br>
+            <a href="#" class="fa fa-linkedin"></a><br>
+        </div>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/43dcc20e7a.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>
